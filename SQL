@@ -28,10 +28,10 @@ from (select dept_name, avg (salary)
 
 
 
-select distinct course_id from section where semester = ’Fall’ and year= 2009 and course_id in (select course_id from section where semester = ’Spring’ and year= 2010);
-select distinct course_id from section where semester = ’Fall’ and year= 2009 and course_id not in (select course_id from section where semester = ’Spring’ and year= 2010);
-select name from instructor where salary > some (select salary from instructor where dept name = ’Biology’); 
-select name from instructor where salary > all (select salary from instructor where dept name = ’Biology’);
+select distinct course_id from section where semester = 'Fall' and year= 2009 and course_id in (select course_id from section where semester = 'Spring' and year= 2010);
+select distinct course_id from section where semester = 'Fall' and year= 2009 and course_id not in (select course_id from section where semester = 'Spring' and year= 2010);
+select name from instructor where salary > some (select salary from instructor where dept name = 'Biology'); 
+select name from instructor where salary > all (select salary from instructor where dept name = 'Biology');
 
 
 
